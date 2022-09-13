@@ -1,0 +1,26 @@
+{
+  "item.overhaul.nether_quartz_gem": "Nether Quartz Gem",
+  "item.overhaul.emerald_gem": "Emerald Gem",
+  "item.overhaul.copper_gem": "Copper Gem",
+  "item.overhaul.copper_jewel": "Copper Jewel",
+  "item.overhaul.encrusted_copper_jewel": "Encrusted Copper Jewel",
+  "item.overhaul.alexandrite_ingot": "Alexandrite Ingot",
+
+  "item.overhaul.alexandrite_ore": "Alexandrite Ore",
+
+  "block.overhaul.alexandrite_ore": "Alexandrite Ore",
+
+  "item.overhaul.netherite_quartz_helmet": "Netherite Quartz Helmet",
+  "item.overhaul.netherite_quartz_chestplate": "Netherite Quartz Chestplate",
+  "item.overhaul.netherite_quartz_leggings": "Netherite Quartz Leggings",
+  "item.overhaul.netherite_quartz_boots": "Netherite Quartz Boots",
+
+  "item.overhaul.netherite_quartz_shovel": "Netherite Quartz Shovel",
+  "item.overhaul.netherite_quartz_sword": "Netherite Quartz Sword",
+  "item.overhaul.netherite_quartz_pickaxe": "Netherite Quartz Pickaxe",
+  "item.overhaul.netherite_quartz_axe": "Netherite Quartz Axe",
+  "item.overhaul.netherite_quartz_hoe": "Netherite Quartz Hoe",
+
+  "enchantment.overhaul.frost_aspect": "Frost Aspect",
+  "enchantment.overhaul.lightning_aspect": "Lightning Aspect"
+}

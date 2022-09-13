@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#E#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    }
+  },
+  "result": {
+    "item": "overhaul:emerald_gem",
+    "count": 1
+  },
+  "group": "gem"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#E#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "E": {
+      "item": "minecraft:copper_block"
+    }
+  },
+  "result": {
+    "item": "overhaul:copper_gem",
+    "count": 1
+  },
+  "group": "gem"
+}

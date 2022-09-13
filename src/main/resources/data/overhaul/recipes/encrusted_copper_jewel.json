@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "N# ",
+    "#N ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "overhaul:copper_jewel"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "result": {
+    "item": "overhaul:encrusted_copper_jewel",
+    "count": 2
+  },
+  "group": "encrusted_jewel"
+}

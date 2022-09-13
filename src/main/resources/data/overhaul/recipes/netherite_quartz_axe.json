@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "addition": {
+    "item": "overhaul:nether_quartz_gem"
+  },
+  "result": {
+    "item": "overhaul:netherite_quartz_axe"
+  }
+}

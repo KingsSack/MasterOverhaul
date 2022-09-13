@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "overhaul:copper_gem"
+    }
+  },
+  "result": {
+    "item": "overhaul:copper_jewel",
+    "count": 1
+  },
+  "group": "jewel"
+}

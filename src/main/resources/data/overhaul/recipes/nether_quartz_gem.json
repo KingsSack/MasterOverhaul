@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#Q#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:quartz"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "result": {
+    "item": "overhaul:nether_quartz_gem",
+    "count": 1
+  },
+  "group": "gem"
+}

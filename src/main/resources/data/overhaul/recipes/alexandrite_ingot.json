@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "overhaul:alexandrite_ore"
+  },
+  "result": "overhaul:alexandrite_ingot",
+  "experience": 2.2,
+  "cookingtime": 200
+}
