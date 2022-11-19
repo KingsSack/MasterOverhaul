@@ -3,6 +3,7 @@ package com.lasteditguild.overhaul;
 import com.lasteditguild.overhaul.blocks.BlockInitializer;
 import com.lasteditguild.overhaul.blocks.ore.OreSpawning;
 import com.lasteditguild.overhaul.enchantments.Enchantments;
+import com.lasteditguild.overhaul.entities.mobs.MobInitializer;
 import com.lasteditguild.overhaul.items.ItemInitializer;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -27,6 +28,9 @@ public class Main implements ModInitializer {
 
 		ItemInitializer.ItemInit();
 		BlockInitializer.BlockInit();
+
+		MobInitializer.MobInit();
+
 		Enchantments.EnchantmentInit();
 	}
 

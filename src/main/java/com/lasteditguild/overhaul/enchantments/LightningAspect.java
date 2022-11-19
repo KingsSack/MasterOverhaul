@@ -2,11 +2,7 @@ package com.lasteditguild.overhaul.enchantments;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.world.explosion.Explosion;
-import net.minecraft.world.explosion.Explosion.DestructionType;
+import net.minecraft.entity.*;
 
 public class LightningAspect extends Enchantment {
 
@@ -27,9 +23,9 @@ public class LightningAspect extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(target instanceof LivingEntity) {
-            new Explosion(target.world, target, target.getX(), target.getY(), target.getZ(), 0.7f, true, DestructionType.BREAK);
-
-            //target.kill();
+            LightningEntity lightning = new LightningEntity(EntityType.LIGHTNING_BOLT, target.world); // Create the lightning bolt
+            lightning.setPosition(target.getPos()); // Set its position. This will make the lightning bolt strike the player (probably not what you want)
+            target.world.spawnEntity(lightning); // Spawn the lightning entity
         }
 
         super.onTargetDamaged(user, target, level);
