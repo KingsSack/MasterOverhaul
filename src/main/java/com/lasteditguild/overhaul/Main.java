@@ -27,6 +27,7 @@ public class Main implements ModInitializer {
 		OreSpawning.OreInit();
 
 		ItemInitializer.ItemInit();
+
 		BlockInitializer.BlockInit();
 
 		MobInitializer.MobInit();
