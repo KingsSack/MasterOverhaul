@@ -19,9 +19,6 @@
   "entrypoints": {
     "main": [
       "com.lasteditguild.overhaul.Main"
-    ],
-    "client": [
-      "com.lasteditguild.overhaul.OverhaulClient"
     ]
   },
   "mixins": [
