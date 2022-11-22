@@ -22,5 +22,10 @@
   "item.overhaul.netherite_quartz_hoe": "Netherite Quartz Hoe",
 
   "enchantment.overhaul.frost_aspect": "Frost Aspect",
-  "enchantment.overhaul.lightning_aspect": "Lightning Aspect"
+  "enchantment.overhaul.lightning_aspect": "Lightning Aspect",
+
+  "lore.overhaul.blank": "",
+  "lore.overhaul.full_set": "Full set bonus:",
+
+  "lore.overhaul.netherite_quartz_helmet1": "Night Vision"
 }

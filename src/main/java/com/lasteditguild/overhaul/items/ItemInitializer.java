@@ -1,6 +1,6 @@
 package com.lasteditguild.overhaul.items;
 
-import com.lasteditguild.overhaul.items.gear.armor.NetheriteQuartzArmorRegistry;
+import com.lasteditguild.overhaul.items.gear.armor.quartz.netherite.NetheriteQuartzArmorRegistry;
 import com.lasteditguild.overhaul.items.gear.tools.NetheriteQuartzToolRegistry;
 import com.lasteditguild.overhaul.items.gems.CopperGemRegistry;
 import com.lasteditguild.overhaul.items.gems.EmeraldGemRegistry;

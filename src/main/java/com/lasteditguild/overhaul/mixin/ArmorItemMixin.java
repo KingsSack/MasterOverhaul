@@ -2,7 +2,7 @@ package com.lasteditguild.overhaul.mixin;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import com.lasteditguild.overhaul.items.gear.armor.NetheriteQuartzArmorRegistry;
+import com.lasteditguild.overhaul.items.gear.armor.quartz.netherite.NetheriteQuartzArmorRegistry;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
