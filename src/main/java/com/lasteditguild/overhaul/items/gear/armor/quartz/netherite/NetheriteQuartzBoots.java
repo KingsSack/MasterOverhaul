@@ -20,6 +20,7 @@ public class NetheriteQuartzBoots extends ArmorItem {
 
     @Override
     public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        tooltip.add(Text.translatable(("lore.overhaul.blank")));
         tooltip.add(Text.translatable("lore.overhaul.full_set").formatted(Formatting.GRAY));
         tooltip.add(Text.translatable("lore.overhaul.netherite_quartz_helmet1").formatted(Formatting.BLUE));
     }
