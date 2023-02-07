@@ -1,18 +1,18 @@
 package com.lasteditguild.overhaul.userinterface;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.minecraft.client.gui.screen.ingame.ForgingScreen;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class InfusionTableScreen extends HandledScreen<InfusionTableScreenHandler> {
+public class InfusionTableScreen extends ForgingScreen<InfusionTableScreenHandler> {
 
     private static final Identifier TEXTURE = new Identifier("minecraft", "textures/gui/container/smithing.png");
 
     public InfusionTableScreen(InfusionTableScreenHandler handler, PlayerInventory inventory, Text title) {
-        super(handler, inventory, title);
+        super(handler, inventory, title, TEXTURE);
     }
 
     @Override

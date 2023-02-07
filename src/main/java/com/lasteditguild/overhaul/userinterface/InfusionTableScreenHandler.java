@@ -3,7 +3,6 @@ package com.lasteditguild.overhaul.userinterface;
 
 import com.lasteditguild.overhaul.blocks.workbench.WorkbenchInitializer;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
@@ -80,6 +79,11 @@ public class InfusionTableScreenHandler extends ForgingScreenHandler {
 
     public boolean canInsertIntoSlot(ItemStack stack, Slot slot) {
         return slot.inventory != this.output && super.canInsertIntoSlot(stack, slot);
+    }
+
+    @Override
+    public ScreenHandlerType<?> getType() {
+        return WorkbenchInitializer.INFUSION_TABLE_SCREEN_HANDLER;
     }
 
 }
