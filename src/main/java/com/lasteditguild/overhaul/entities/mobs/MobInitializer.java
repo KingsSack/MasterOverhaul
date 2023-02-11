@@ -8,7 +8,7 @@ import static com.lasteditguild.overhaul.entities.mobs.drowned.DrownedSkeletonRe
 public class MobInitializer {
 
     public static void MobInit() {
-        FabricDefaultAttributeRegistry.register(DROWNED_SKELETON, DrownedSkeletonEntity.createMobAttributes());
+        // FabricDefaultAttributeRegistry.register(DROWNED_SKELETON, DrownedSkeletonEntity.createMobAttributes());
     }
 
 }

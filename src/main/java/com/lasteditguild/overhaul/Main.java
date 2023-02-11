@@ -5,6 +5,7 @@ import com.lasteditguild.overhaul.blocks.ore.OreSpawning;
 import com.lasteditguild.overhaul.enchantments.Enchantments;
 import com.lasteditguild.overhaul.entities.mobs.MobInitializer;
 import com.lasteditguild.overhaul.items.ItemInitializer;
+import com.lasteditguild.overhaul.recipes.RecipeInitializer;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,6 +30,8 @@ public class Main implements ModInitializer {
 		ItemInitializer.ItemInit();
 
 		BlockInitializer.BlockInit();
+
+		RecipeInitializer.RecipeInit();
 
 		MobInitializer.MobInit();
 

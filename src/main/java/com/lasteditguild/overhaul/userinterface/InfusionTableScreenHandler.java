@@ -2,12 +2,11 @@ package com.lasteditguild.overhaul.userinterface;
 
 
 import com.lasteditguild.overhaul.blocks.workbench.WorkbenchInitializer;
+import com.lasteditguild.overhaul.recipes.InfusionTableRecipe;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.RecipeType;
-import net.minecraft.recipe.SmithingRecipe;
 import net.minecraft.screen.ForgingScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.ScreenHandlerType;
@@ -21,8 +20,8 @@ public class InfusionTableScreenHandler extends ForgingScreenHandler {
 
     private final World world;
     @Nullable
-    private SmithingRecipe currentRecipe;
-    private final List<SmithingRecipe> recipes;
+    private InfusionTableRecipe currentRecipe;
+    private final List<InfusionTableRecipe> recipes;
 
     public InfusionTableScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
@@ -31,7 +30,7 @@ public class InfusionTableScreenHandler extends ForgingScreenHandler {
     public InfusionTableScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
         super(ScreenHandlerType.SMITHING, syncId, playerInventory, context);
         this.world = playerInventory.player.world;
-        this.recipes = this.world.getRecipeManager().listAllOfType(RecipeType.SMITHING);
+        this.recipes = this.world.getRecipeManager().listAllOfType(InfusionTableRecipe.Type.INFUSION);
     }
 
     protected boolean canUse(BlockState state) {
@@ -59,11 +58,11 @@ public class InfusionTableScreenHandler extends ForgingScreenHandler {
     }
 
     public void updateResult() {
-        List<SmithingRecipe> list = this.world.getRecipeManager().getAllMatches(RecipeType.SMITHING, this.input, this.world);
+        List<InfusionTableRecipe> list = this.world.getRecipeManager().getAllMatches(InfusionTableRecipe.Type.INFUSION, this.input, this.world);
         if (list.isEmpty()) {
             this.output.setStack(0, ItemStack.EMPTY);
         } else {
-            this.currentRecipe = (SmithingRecipe) list.get(0);
+            this.currentRecipe = (InfusionTableRecipe) list.get(0);
             ItemStack itemStack = this.currentRecipe.craft(this.input);
             this.output.setLastRecipe(this.currentRecipe);
             this.output.setStack(0, itemStack);
